@@ -1,17 +1,1 @@
-(function() {
-    const url = 'https://dummyjson.com/user/2';
-    const paragrafoElemento = document.createElement('p');
-    document.body.appendChild(paragrafoElemento);
-
-    async function consumirURL() {
-        try {
-            const resposta = await fetch(url);
-            const dados = await resposta.json();
-            paragrafoElemento.textContent = JSON.stringify(dados);
-        } catch (erro) {
-            console.error('Erro ao consumir a URL:', erro);
-        }
-    }
-
-    consumirURL();
-})();
+!function(){const e='https://dummyjson.com/user/2',t=document.createElement('p');document.body.appendChild(t),async function(){try{const a=await fetch(e),n=await a.json();t.textContent=JSON.stringify(n)}catch(e){console.error('Erro ao consumir a URL:',e)}}()}();
